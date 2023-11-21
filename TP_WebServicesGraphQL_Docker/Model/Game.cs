@@ -14,7 +14,7 @@ namespace TP_WebServicesGraphQL_Docker.Model
         public string Name { get; set; }
 
         [Required]
-        public List<string> Genres { get; set; }
+        public string[] Genres { get; set; }
 
         public DateTime PublicationDate { get; set; }
 
@@ -25,6 +25,6 @@ namespace TP_WebServicesGraphQL_Docker.Model
         public List<Studio> Studios { get; set; } = new List<Studio>();
 
         [Required]
-        public List<string> Platforms { get; set; } = new List<string>();
+        public string[] Platforms { get; set; }
     }
 }

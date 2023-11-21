@@ -12,7 +12,10 @@ builder.Services.AddDbContext<ApiContext>(options =>
     );
 builder.Services
     .AddGraphQLServer()
-    .AddQueryType<Query>();
+    .AddQueryType<Query>()
+    .AddProjections()
+    .AddFiltering()
+    .AddSorting();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();

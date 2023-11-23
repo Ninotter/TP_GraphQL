@@ -35,5 +35,5 @@ Once the migration has been correctly done, building the application :
 ```bash
 dotnet build -c Release
 ```
-Execute `bin\Release\net6.0\TP_WebServicesGraphQL_Docker.exe` to start the server.
+Execute `bin\Release\net6.0\TP_WebServicesGraphQL_Docker.exe` or use `dotnet run` to start the server.
 Once the server is running, open a browser tab to the URL https://localhost:7159/graphql/ .

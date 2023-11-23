@@ -27,6 +27,8 @@ Open appsettings.json and update your connection strings with your MySQL databas
 Migrating the code-first schema to the database :
 ```bash
 dotnet tool install --global dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
 Once the migration has been correctly done, building the application : 
